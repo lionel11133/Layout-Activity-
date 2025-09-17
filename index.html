@@ -1,106 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout</title>
-  <style>
-    * {
-      margin: 5px;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      display: flex;
-      justify-content: space-around;
-      background: #FF1313;
-      font-family: Arial, sans-serif;
-    }
-    .layout {
-      border: 2px solid #000;
-      padding: 10px;
-      width: 300px;
-      height: 350px;
-      display: flex;
-      flex-direction: column;
-      background: #fff;
-    }
-    .box {
-      border: 1px solid #444;
-      background: lightgray;
-      flex: none;
-    }
-    .layout1 .top { height: 40px; }
-    .layout1 .middle {
-      display: flex;
-      flex: 1;
-    }
-    .layout1 .sidebar { width: 60px; }
-    .layout1 .content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .layout1 .content-top { flex: 1; }
-    .layout1 .content-bottom { height: 40px; }
-
-    .layout2 .top { height: 40px; }
-    .layout2 .main {
-      display: flex;
-      flex: 1;
-    }
-    .layout2 .col { flex: 1; }
-    .layout2 .sidebar { width: 60px; }
-    .layout2 .footer { height: 40px; }
-    
-  
-    .layout3 .header {
-      display: flex;
-      align-items: center;
-    }
-    .layout3 .circle {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: gray;
-    }
-    .layout3 .top { flex: 1; height: 40px; }
-    .layout3 .main {
-      display: flex;
-      flex: 1;
-    }
-    .layout3 .col1 { flex: 1; }
-    .layout3 .col2 { flex: 2; }
-    .layout3 .footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .layout3 .footer-box { flex: 1; height: 40px; }
-    .layout3 .footer-circle {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: gray;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Layouts</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-  <div class="layout layout1">
-    <div class="box top"></div>
-    <div class="middle">
-      <div class="box sidebar"></div>
-      <div class="content">
-        <div class="box content-top"></div>
-        <div class="box content-bottom"></div>
-      </div>
+
+  <div>
+    <h2>Layout 1</h2>
+    <div class="layout layout1">
+      <div class="box header">Header</div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box topbox">Topbox</div>
+      <div class="box content">Content</div>
+      <div class="box footer">Footer</div>
     </div>
   </div>
 
-  <div class="layout layout2">
-    <div class="box top"></div>
-    <div class="main">
+  <div>
+    <h2>Layout 2</h2>
+    <div class="layout layout2">
+      <div class="box header">Header</div>
+      <div class="box col1">Column 1</div>
+      <div class="box col2">Column 2</div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box footer">Footer</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Layout 3</h2>
+    <div class="layout layout3">
+      <div class="box c1">C1</div>
+      <div class="box header">Header</div>
+      <div class="box topbox">Topbox</div>
+      <div class="box left">Left</div>
+      <div class="box right">Right</div>
+      <div class="box footer">Footer</div>
+      <div class="box c2">C2</div>
+    </div>
+  </div>
+</body>
+</html>    <div class="main">
       <div class="box col"></div>
       <div class="box col"></div>
       <div class="box sidebar"></div>
